@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>V300搭配点光源实现Mark点精准定位</title>
+<meta name="keywords" content="视觉控制器, V300,机器视觉">
+<meta name="description" content="深圳市卓信创驰技术有限公司">
+<link rel="stylesheet" type="text/css" href="/static/css/animate.min.css">
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="/static/css/less.css">
+<script src="/static/js/jquery.min.js"></script>
+</head>
+<body ondragstart="return false">
+<div class="header">
+    <div class="wp">
+        <div class="hd">
+            <div class="menuBtn"></div>
+            <div class="logo">
+                <a href="/index.html"><img src="/static/picture/2a9e30040078264f1aac0b425be2d52e.png"></a>
+            </div>
+            <div class="hdr">
+                <ul class="ul-nav">
+                    <li><a href="/index.html" class="v1">首页</a></li>
+                                                            <li>
+                        <a href="/Producs.html" class="v1">产品信息</a>
+                        <div class="arr"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="sub">
+                            <div class="wp1120">
+                                <div class="info">
+                                    <div class="g-tab">
+                                                                            <div class="lab on">应用</div>
+                                                                            <div class="lab ">处理器</div>
+                                                                            <div class="lab ">产品特性</div>
+                                     
+                                    </div>
+                                    <div class="g-tabinfo">
+                                                                            <div class="item on">
+                                            <div class="tit-m">应用</div>
+                                                                                        <div class="con">
+                                                <div class="tit">加固型嵌入式计算平台</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/scalable.html" class="v2">可扩展嵌入式系列</a>
+                                                                                                    <a href="/mini.html" class="v2">超紧凑迷你型系列</a>
+                                                                                                    <a href="/universal.html" class="v2">通用嵌入式系列</a>
+                                                                                                    <a href="/allinone.html" class="v2">⼯业触控⼀体机</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">机器与视觉控制</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/realtimeIO.html" class="v2">实时I/O控制</a>
+                                                                                                    <a href="/cards.html" class="v2">扩展卡与以太⽹卡</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">IOT物流网网关</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">加固型机架式计算平台</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                </div>
+                                            </div>
+                                                                                    </div>
+                                                                            <div class="item ">
+                                            <div class="tit-m">处理器</div>
+                                                                                        <div class="con">
+                                                <div class="tit">第十二代英特尔平台</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/AlderLake.html" class="v2">英特尔Alder Lake平台</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">第十一代英特尔平台</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/TigerLake.html" class="v2">英特尔Tiger Lake平台</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">第⼗代英特尔平台</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/CometLake.html" class="v2">英特尔Comet Lake平台</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">第六⾄九代英特尔平台</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/6to9.html" class="v2">第六⾄九代英特尔平台</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">Intel ATOM平台</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/ApolloLake2.html" class="v2">Intel Apollo Lake</a>
+                                                                                                    <a href="/ElkhartLake.html" class="v2">Intel Elkhart Lake</a>
+                                                                                                    <a href="/AlderLakeN.html" class="v2">Intel Alder Lake N</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">网卡</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/wangka2.html" class="v2">网卡</a>
+                                                                                                </div>
+                                            </div>
+                                                                                    </div>
+                                                                            <div class="item ">
+                                            <div class="tit-m">产品特性</div>
+                                                                                        <div class="con">
+                                                <div class="tit">PoE/PoE+</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/PoEPoE.html" class="v2">PoE/PoE+</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">2.5"超迷你型</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/2.5mini8.html" class="v2">2.5"超迷你型</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">多个扩展槽</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/expansion6.html" class="v2">多个扩展槽</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">多⽹⼝</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/multiLAN3.html" class="v2">多网口</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">实时触发和DIO</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/DIO7.html" class="v2">实时触发和DIO</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">核心主板</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/singleboard7.html" class="v2">核心主板</a>
+                                                                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                            </li>
+                                        <li>
+                        <a href="/sample.html" class="v1">销售与支持</a>
+                        <div class="arr"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                                                                <div class="sub">
+                            <div class="wp1120">
+                                <div class="info">
+                                    <div class="g-tab">
+                                        <div class="lab on">销售与支持</div>
+                                    </div>
+                                    <div class="g-tabinfo">
+                                        <div class="item on">
+                                            <div class="tit-m">销售与支持</div>
+                                            <div class="con">
+                                                <div class="tit">销售与支持</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/sample1.html" class="v2">样品申请</a>
+                                                                                                    <a href="/ycsphy.html" class="v2">售后服务</a>
+                                                                                                    <a href="/problems.html" class="v2">常见问题</a>
+                                                                                                    <a href="/downloads.html" class="v2">下载专区</a>
+                                                                                                    <a href="/designandmanufacture.html" class="v2">设计与制造</a>
+                                                                                                    <a href="/customized.html" class="v2">客制化服务</a>
+                                                                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            </li>
+                                        <li>
+                        <a href="/Application.html" class="v1">行业应用</a>
+                        <div class="arr"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                                        <div class="sub">
+                            <div class="wp1120">
+                                <div class="info">
+                                    <div class="g-tab">
+                                        <div class="lab on">行业应用</div>
+                                    </div>
+                                    <div class="g-tabinfo">
+                                        <div class="item on">
+                                            <div class="tit-m">行业应用</div>
+                                            <div class="con">
+                                                <div class="tit">行业应用</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/32.html" class="v2">智能制造</a>
+                                                                                                    <a href="/10.html" class="v2">机器视觉</a>
+                                                                                                    <a href="/92.html" class="v2">AMR</a>
+                                                                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                    </li>
+                                        <li>
+                        <a href="/company.html" class="v1">关于我们</a>
+                        <div class="arr"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                                                                <div class="sub">
+                            <div class="wp1120">
+                                <div class="info">
+                                    <div class="g-tab">
+                                        <div class="lab on">关于我们</div>
+                                    </div>
+                                    <div class="g-tabinfo">
+                                        <div class="item on">
+                                            <div class="tit-m">关于我们</div>
+                                            <div class="con">
+                                                <div class="tit">关于我们</div>
+                                                <div class="arr2"><span><img src="/static/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/company1.html" class="v2">公司简介</a>
+                                                                                                    <a href="/companyculture.html" class="v2">企业文化</a>
+                                                                                                    <a href="/news.html" class="v2">新闻动态</a>
+                                                                                                    <a href="/contactus.html" class="v2">联系我们</a>
+                                                                                                    <a href="/video.html" class="v2">视频介绍</a>
+                                                                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            </li>
+                                                    </ul>
+                <div class="hd-link">
+                    <div class="so_box">
+                        <a href="JavaScript:;" class="so"><img src="/static/picture/g-icn07.png" alt=""></a>
+                        <div class="box">
+                            <div class="wp">
+                                <form method="get" target="ifrm1" action="/index.php/Category/searchs.html" autocomplete="off">
+                                    <div class="ipt"><input name="key" type="text" placeholder="请输入搜索内容"></div>
+                                    <button type="submit" class="btn"><img src="/static/picture/g-icn07.png" alt=""></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="lang">
+                        <div class="act">CN</div>
+                        <div class="sub">
+                            
+                            <a href="https://www.futurerobottech.com/en/index.php/news/83.html" class="v2">EN</a>
+                            <a href="" class="v2">CN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row-c6">
+    <div class="wp1050">
+        <div class="m-info10">
+            <div class="tit">【产品应用】V300搭配点光源实现Mark点精准定位</div>
+            <div class="date">2020-02-27</div>
+            <div class="desc">
+                <p style="margin: 7.5pt 0cm 5pt; overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; text-align: center; background-position: 0% 0%; background-image: none; line-height: 12.6pt; background-repeat: repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-size: auto;"><strong>项目介绍</strong></p><p style="margin: 7.5pt 0cm 5pt; overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; background-position: 0% 0%; background-image: none; line-height: 12.6pt; background-repeat: repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-size: auto;">&nbsp; &nbsp; &nbsp;&nbsp; 随着工业自动化的发展，电子元件的尺寸不断减小，Mark点定位在机器视觉定位中摆在首位,尤其在IC芯片、PCB板的加工过程中有着重要的应用。在这些高精度的加工过程中,由于Mark点边缘的瑕疵和缺陷,导致Mark点定位准确度下降,利用<a href="http://web.17uhui.com/website/index.php?_m=wp_frontpage&_a=index&id=1&sessionid=7fed5f06faa786c9f3df04cfa873579a" utype="1#1"><strong>视觉工控机</strong></a>加点光源配合远心镜头旨在消除边缘瑕疵影响,提高定位精确度。</p><div align="left" style="overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal;"><p style="text-align:center"><img alt="" src="/static/picture/1675758239765120.jpg" style="border: 0px; padding-right: 0px;"></p></div><p style="overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal;"><br></p><p style="margin: 7.5pt 0cm 5pt; overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; text-align: center; background-position: 0% 0%; background-image: none; line-height: 12.6pt; background-repeat: repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-size: auto;"><strong>应用需求</strong></p><div align="left" style="overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; padding: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">&nbsp; &nbsp; &nbsp;&nbsp; Mark点定位在机器视觉应用中是非常多的，因存在各种各样的Mark点。通过Mark点的位置，可以去确定其它的产品、零件的位置，可以用于检测，也可以用于组装装配。SMT行业晶片位置角度与PCB板Mark点位置的测试测量 检测要求精度需要达到0.04mm，移动速度达到100mm/s。V300系列视觉控制器与点光源，配合远心镜头做同轴光源使用，可实现小视野、高亮度、高精度要求场合的应用，为机器视觉应用提供先进的解决方案。<br><p style="text-align:center"><img title="视觉工控机" alt="视觉工控机" src="/static/picture/1675758239621685.jpg" style="border: 0px; padding-right: 0px;"></p></div><p style="margin: 7.5pt 0cm 5pt; overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; text-align: center; background-position: 0% 0%; background-image: none; line-height: 12.6pt; background-repeat: repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-size: auto;"><strong>解决方案</strong></p><p style="margin: 6pt 0cm 18pt; overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; background-position: 0% 0%; background-image: none; line-height: 18pt; background-repeat: repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-size: auto;">&nbsp; &nbsp; &nbsp;&nbsp; V300系列视觉控工控机搭配有英特尔®奔腾N4200处理器和最高8 GB DDR3L内存，具备专业的视觉控制和高性能图像处理能力。V300系列产品设计有专业的视觉控制I/O接口，带有三个独立的千兆以太网接口、两组光源控制输出、四组隔离数字I/O、两个串口、四个USB端口等，可以实现实时动态触发和多摄像头同步采集。 &nbsp; &nbsp;<br>&nbsp; &nbsp; &nbsp;&nbsp; V300系列视觉工控机基于FPGA的设计，DI/O功能提供的API函数库，能够实现可编程的DI防抖动滤波、时间延迟而不会占用CPU资源、可调DO脉冲宽度，用户通过接线配置灌/源电流DO，实时动态触发；点光源采用恒流控制，更稳定，更亮，更均匀，使其成为需要高计算能力、精准时间操作，实现小视野、高亮度、高精度、占用空间小的机器视觉应用的理想解决方案。<br>&nbsp;</p><p style="text-align:center"><img title="视觉工控机" alt="视觉工控机" src="/static/picture/1675758240130836.jpg" style="border: 0px; padding-right: 0px;"></p><p style="margin: 6pt 0cm 18pt; overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; background-position: 0% 0%; background-image: none; line-height: 18pt; background-repeat: repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-size: auto;">&nbsp;&nbsp;<br></p><p style="margin-top: 0px; margin-bottom: 0px; overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; text-align: center; padding: 0px;"><strong>客户利益</strong></p><p style="overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal;"><br></p><p style="margin-top: 0px; margin-bottom: 0px; overflow-wrap: break-word; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal; padding: 0px;"><br></p><ul class=" list-paddingleft-2" style="width: 1188.35px; font-family: &quot;sans serif&quot;, tahoma, verdana, helvetica; font-size: 12px; white-space: normal;"><li><div style="overflow-wrap: break-word; padding: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">精度更高，可大幅缩短时间80%以上</div></li><li><div style="overflow-wrap: break-word; padding: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">减少原材料浪费<br></div></li><li><div style="overflow-wrap: break-word; padding: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;">减轻工人劳动强度，有更多精力来提高产品质量</div></li></ul><p><br></p>            </div>
+        </div>
+        <div class="m-arr01">
+            <a href="/84.html" class="arr prev">上一篇：【产品推荐】4通道PCI Express USB3.1网卡--多相机同步高速稳定采集理想选择</a><a href="/82.html" class="arr next">下一篇：【产品推荐】C110  2/4通道PCI Express® GigE Vision 图像采集卡--多相机同步采集理想选择</a>        </div>
+    </div>
+</div><div class="footer">
+    <div class="wp">
+        <div class="fd-top">
+            <ul class="ul-fdnav">
+                                            <li>
+                    <div class="tit">产品信息</div>
+                                                            <a href="/scalable1.html" class="v1">可扩展嵌入式系列</a>
+                                        <a href="/mini2.html" class="v1">超紧凑迷你型系列</a>
+                                        <a href="/universal1.html" class="v1">通用嵌入式系列</a>
+                                        <a href="/allinone1.html" class="v1">⼯业触控⼀体机</a>
+                                                            <a href="/realtimeIO1.html" class="v1">实时I/O控制</a>
+                                        <a href="/cards1.html" class="v1">扩展卡与以太⽹卡</a>
+                                                                                                            </li>
+                                <li>
+                    <div class="tit">销售与支持</div>
+                                                                               <a href="/sample1.html" class="v1">样品申请</a>
+                                        <a href="/ycsphy.html" class="v1">售后服务</a>
+                                        <a href="/problems.html" class="v1">常见问题</a>
+                                        <a href="/downloads.html" class="v1">下载专区</a>
+                                        <a href="/designandmanufacture.html" class="v1">设计与制造</a>
+                                        <a href="/customized.html" class="v1">客制化服务</a>
+                                                                                          </li>
+                                <li>
+                    <div class="tit">行业应用</div>
+                                                                                                <a href="/32.html" class="v1">智能制造</a>
+                                        <a href="/10.html" class="v1">机器视觉</a>
+                                        <a href="/92.html" class="v1">AMR</a>
+                                                                        </li>
+                                <li>
+                    <div class="tit">关于我们</div>
+                                                                                                                  <a href="/company.html" class="v1">公司简介</a>
+                                        <a href="/companyculture1.html" class="v1">企业文化</a>
+                                        <a href="/news1.html" class="v1">新闻动态</a>
+                                        <a href="/contactus1.html" class="v1">联系我们</a>
+                                        <a href="/video1.html" class="v1">视频介绍</a>
+                                                      </li>
+                                        </ul>
+            <div class="fd-tel">
+                <div class="info">
+                    <div class="fd-logo"><a href="/index.html"><img src="/static/picture/fd-logo.png" alt=""></a></div>
+                    <ul class="ul-tel">
+                        <li>
+                            <div class="con">
+                                <div class="icn"><img src="/static/picture/g-icn03.png" alt=""></div>
+                                <div class="txt">热线：0755-86560716</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="con">
+                                <div class="icn"><img src="/static/picture/g-icn04.png" alt=""></div>
+                                <div class="txt">邮箱：info@futurerobottech.com</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="con">
+                                <div class="icn"><img src="/static/picture/g-icn05.png" alt=""></div>
+                                <div class="txt">地址：广东省深圳市南山区龙珠三路45号南山睿园17栋6层</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="qr">
+                    <img src="/static/picture/3afac894371445098f9e3f2ec09fb810.png">
+                    <div class="desc">扫一扫，关注我们</div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-copy">
+            <div class="copy"><p>Copyrigt © 深圳市卓信创驰技术有限公司 All Rights Reserved 粤ICP备18096933号-1</p></div>
+            <div class="link">
+                <!-- <a href="">网站地图</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="ul-snv">
+    <li>
+        <a href="javascript:;" class="con"><img src="/static/picture/g-icn06.png" alt=""></a>
+        <div class="sub">
+            <div class="item">
+                <div class="icn"><img src="/static/picture/icn42.png" alt=""></div>
+                <div class="tit"><a href="https://yzf.qq.com/xv/web/static/chat/index.html?sign=37ef9b97d1200792214797eb1bb3e2630aa7cd46ba3f51ff51a4bc40ea01b72f3ead319deab6bfffccb80ab144769342f22e8cb6" target="_blank">在线联系</a></div>
+            </div>
+            <div class="item">
+                <div class="icn"><img src="/static/picture/icn43.png" alt=""></div>
+                <div class="tit">0755-86560716</div>
+            </div>
+            <div class="item">
+                <div class="icn"><img src="/static/picture/icn44.png" alt=""></div>
+                <div class="tit">info@futurerobottech.com</div>
+            </div>
+        </div>
+    </li>
+</ul>
+<script src="/static/js/wow.min.js"></script>
+<script src="/static/js/lib.js"></script>
+<link rel="stylesheet" href="/static/css/slick.css">
+<script src="/static/js/slick.min.js"></script>
+</body>
+</html>

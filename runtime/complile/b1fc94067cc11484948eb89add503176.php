@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>深圳市卓信创驰技术有限公司</title>
+<meta name="keywords" content="深圳市卓信创驰技术有限公司">
+<meta name="description" content="深圳市卓信创驰技术有限公司">
+<link rel="stylesheet" type="text/css" href="/skin/css/animate.min.css">
+<link rel="stylesheet" href="/skin/css/style.css">
+<link rel="stylesheet" href="/skin/css/less.css">
+<script src="/skin/js/jquery.min.js"></script>
+</head>
+<body ondragstart="return false">
+<div class="header">
+    <div class="wp">
+        <div class="hd">
+            <div class="menuBtn"></div>
+            <div class="logo">
+                <a href="/index.html"><img src="/skin/picture/2a9e30040078264f1aac0b425be2d52e.png"></a>
+            </div>
+            <div class="hdr">
+                <ul class="ul-nav">
+                    <li><a href="/index.html" class="v1">首页</a></li>
+                                                            <li>
+                        <a href="/Producs.html" class="v1">产品信息</a>
+                        <div class="arr"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="sub">
+                            <div class="wp1120">
+                                <div class="info">
+                                    <div class="g-tab">
+                                                                            <div class="lab on">应用</div>
+                                                                            <div class="lab ">处理器</div>
+                                                                            <div class="lab ">产品特性</div>
+                                     
+                                    </div>
+                                    <div class="g-tabinfo">
+                                                                            <div class="item on">
+                                            <div class="tit-m">应用</div>
+                                                                                        <div class="con">
+                                                <div class="tit">加固型嵌入式计算平台</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/scalable.html" class="v2">可扩展嵌入式系列</a>
+                                                                                                    <a href="/mini.html" class="v2">超紧凑迷你型系列</a>
+                                                                                                    <a href="/universal.html" class="v2">通用嵌入式系列</a>
+                                                                                                    <a href="/allinone.html" class="v2">⼯业触控⼀体机</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">机器与视觉控制</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/realtimeIO.html" class="v2">实时I/O控制</a>
+                                                                                                    <a href="/cards.html" class="v2">扩展卡与以太⽹卡</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">IOT物流网网关</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">加固型机架式计算平台</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                </div>
+                                            </div>
+                                                                                    </div>
+                                                                            <div class="item ">
+                                            <div class="tit-m">处理器</div>
+                                                                                        <div class="con">
+                                                <div class="tit">第十二代英特尔平台</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/AlderLake.html" class="v2">英特尔Alder Lake平台</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">第十一代英特尔平台</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/TigerLake.html" class="v2">英特尔Tiger Lake平台</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">第⼗代英特尔平台</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/CometLake.html" class="v2">英特尔Comet Lake平台</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">第六⾄九代英特尔平台</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/6to9.html" class="v2">第六⾄九代英特尔平台</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">Intel ATOM平台</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/ApolloLake2.html" class="v2">Intel Apollo Lake</a>
+                                                                                                    <a href="/ElkhartLake.html" class="v2">Intel Elkhart Lake</a>
+                                                                                                    <a href="/AlderLakeN.html" class="v2">Intel Alder Lake N</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">网卡</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/wangka2.html" class="v2">网卡</a>
+                                                                                                </div>
+                                            </div>
+                                                                                    </div>
+                                                                            <div class="item ">
+                                            <div class="tit-m">产品特性</div>
+                                                                                        <div class="con">
+                                                <div class="tit">PoE/PoE+</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/PoEPoE.html" class="v2">PoE/PoE+</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">2.5"超迷你型</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/2.5mini8.html" class="v2">2.5"超迷你型</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">多个扩展槽</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/expansion6.html" class="v2">多个扩展槽</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">多⽹⼝</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/multiLAN3.html" class="v2">多网口</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">实时触发和DIO</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/DIO7.html" class="v2">实时触发和DIO</a>
+                                                                                                </div>
+                                            </div>
+                                                                                        <div class="con">
+                                                <div class="tit">核心主板</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/singleboard7.html" class="v2">核心主板</a>
+                                                                                                </div>
+                                            </div>
+                                                                                    </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                            </li>
+                                        <li>
+                        <a href="/sample.html" class="v1">销售与支持</a>
+                        <div class="arr"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                                                                <div class="sub">
+                            <div class="wp1120">
+                                <div class="info">
+                                    <div class="g-tab">
+                                        <div class="lab on">销售与支持</div>
+                                    </div>
+                                    <div class="g-tabinfo">
+                                        <div class="item on">
+                                            <div class="tit-m">销售与支持</div>
+                                            <div class="con">
+                                                <div class="tit">销售与支持</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/sample1.html" class="v2">样品申请</a>
+                                                                                                    <a href="/ycsphy.html" class="v2">售后服务</a>
+                                                                                                    <a href="/problems.html" class="v2">常见问题</a>
+                                                                                                    <a href="/downloads.html" class="v2">下载专区</a>
+                                                                                                    <a href="/designandmanufacture.html" class="v2">设计与制造</a>
+                                                                                                    <a href="/customized.html" class="v2">客制化服务</a>
+                                                                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            </li>
+                                        <li>
+                        <a href="/Application.html" class="v1">行业应用</a>
+                        <div class="arr"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                                        <div class="sub">
+                            <div class="wp1120">
+                                <div class="info">
+                                    <div class="g-tab">
+                                        <div class="lab on">行业应用</div>
+                                    </div>
+                                    <div class="g-tabinfo">
+                                        <div class="item on">
+                                            <div class="tit-m">行业应用</div>
+                                            <div class="con">
+                                                <div class="tit">行业应用</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/32.html" class="v2">智能制造</a>
+                                                                                                    <a href="/10.html" class="v2">机器视觉</a>
+                                                                                                    <a href="/92.html" class="v2">AMR</a>
+                                                                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                    </li>
+                                        <li>
+                        <a href="/company.html" class="v1">关于我们</a>
+                        <div class="arr"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                                                                <div class="sub">
+                            <div class="wp1120">
+                                <div class="info">
+                                    <div class="g-tab">
+                                        <div class="lab on">关于我们</div>
+                                    </div>
+                                    <div class="g-tabinfo">
+                                        <div class="item on">
+                                            <div class="tit-m">关于我们</div>
+                                            <div class="con">
+                                                <div class="tit">关于我们</div>
+                                                <div class="arr2"><span><img src="/skin/picture/g-icn09.png" alt=""></span></div>
+                                                <div class="txt">
+                                                                                                    <a href="/company1.html" class="v2">公司简介</a>
+                                                                                                    <a href="/companyculture.html" class="v2">企业文化</a>
+                                                                                                    <a href="/news.html" class="v2">新闻动态</a>
+                                                                                                    <a href="/contactus.html" class="v2">联系我们</a>
+                                                                                                    <a href="/video.html" class="v2">视频介绍</a>
+                                                                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            </li>
+                                                    </ul>
+                <div class="hd-link">
+                    <div class="so_box">
+                        <a href="JavaScript:;" class="so"><img src="/skin/picture/g-icn07.png" alt=""></a>
+                        <div class="box">
+                            <div class="wp">
+                                <form method="get" target="ifrm1" action="/index.php/Category/searchs.html" autocomplete="off">
+                                    <div class="ipt"><input name="key" type="text" placeholder="请输入搜索内容"></div>
+                                    <button type="submit" class="btn"><img src="/skin/picture/g-icn07.png" alt=""></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="lang">
+                        <div class="act">CN</div>
+                        <div class="sub">
+                            
+                            <a href="/en.html" class="v2">EN</a>
+                            <a href="" class="v2">CN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="in-ban">
+        <div class="item">
+       <a href="/20.html" target="_self" class="con" style="background-image: url(/skin/image/ea3e2ec808ee7fce26690130f9745977.jpg);"></a>
+    </div>
+        <div class="item">
+       <a href="/111.html" target="_self" class="con" style="background-image: url(/skin/image/ff3cca870ee542df1e8350c5214740e4.jpg);"></a>
+    </div>
+        <div class="item">
+       <a href="/1091.html" target="_self" class="con" style="background-image: url(/skin/image/04b563c5128fb09734a25afae4b4debf.jpg);"></a>
+    </div>
+        <div class="item">
+       <a href="/41.html" target="_self" class="con" style="background-image: url(/skin/image/27e226c7ddced349522917c6293d06a4.jpg);"></a>
+    </div>
+        <div class="item">
+       <a href="/allinone.html" target="_self" class="con" style="background-image: url(/skin/image/892f193c6b4e854017021387f23a3824.jpg);"></a>
+    </div>
+    </div>
+<div class="row-c1">
+    <div class="wp">
+        <div class="g-tit01">
+            <div class="tit">为全球企业及用户提供<span>嵌入式</span>产品</div>
+        </div>
+        <div class="m-info01">
+            <div class="item1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/scalable.html" target="_self" class="con">
+                    <div class="pic"><img src="/skin/picture/69f570e6bfe7a422df4068de7f016a9c.jpg"></div>
+                </a>
+            </div>
+            <div class="item1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                <a href="/mini1.html" target="_self" class="con">
+                    <div class="pic"><img src="/skin/picture/b8dbae76d206f610b46cd8133d03b63e.jpg"></div>
+                </a>
+            </div>
+            <div class="item1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                <a href="/singleboard71.html" target="_self" class="con">
+                    <div class="pic"><img src="/skin/picture/2d7e772f1bfa55d6d6bb5479d2020329.jpg"></div>
+                </a>
+            </div>
+            <div class="item2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                <a href="/universal.html" target="_self" class="con">
+                    <div class="pic"><img src="/skin/picture/2b319010d4638b81fbf1773b0f0fadcc.jpg"></div>
+                </a>
+            </div>
+            <div class="item2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                <a href="/allinone.html" target="_self" class="con">
+                    <div class="pic"><img src="/skin/picture/01a105247ad494ee7fb38d97b5df4dd2.jpg"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row-c2">
+    <div class="wp">
+        <div class="m-info02">
+            <div class="l wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <div class="g-tit02">
+                    <div class="tit">关于我们</div>
+                    <div class="desc">ABOUT US</div>
+                </div>
+                <a href="/company2.html" class="more">
+                    <p>LEARN MORE</p>
+                    <div class="icn"><img src="/skin/picture/icn02.png" alt=""></div>
+                </a>
+            </div>
+            <div class="r">
+                <div class="tit wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">和我们一起创造未来！</div>
+                <div class="desc wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">卓信创驰聚焦于智能制造、人工智能领域。公司集研发、生产、系统整合及销售服务干一体，以精湛的研发实力为核心，以市场需求为导向，致力于为全球企业及个人用户提供嵌入式产品。</div>
+                <ul class="ul-list02">
+                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="con">
+                            <div class="icn"><img src="/skin/picture/icn04.png" alt=""></div>
+                            <div class="txt">诚信</div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="con">
+                            <div class="icn"><img src="/skin/picture/icn05.png" alt=""></div>
+                            <div class="txt">务实</div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="con">
+                            <div class="icn"><img src="/skin/picture/icn06.png" alt=""></div>
+                            <div class="txt">创新</div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="con">
+                            <div class="icn"><img src="/skin/picture/icn07.png" alt=""></div>
+                            <div class="txt">人才</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="ul-pro01">
+                <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+            <a href="/company3.html" target="_self" class="con">
+                <div class="pic"><img src="/skin/picture/bbc4ba7a67245be79d8b438102de2897.jpg"></div>
+                <div class="info">
+                    <div class="num">01</div>
+                    <div class="tit">研发团队</div>
+                </div>
+            </a>
+        </li>
+                <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+            <a href="/106.html" target="_self" class="con">
+                <div class="pic"><img src="/skin/picture/397475c967c7b516233b861545d58b32.jpg"></div>
+                <div class="info">
+                    <div class="num">02</div>
+                    <div class="tit">行业应用</div>
+                </div>
+            </a>
+        </li>
+                <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+            <a href="/customized.html" target="_self" class="con">
+                <div class="pic"><img src="/skin/picture/4e8b953b3e7592ba24291beb56c31e19.jpg"></div>
+                <div class="info">
+                    <div class="num">03</div>
+                    <div class="tit">定制服务</div>
+                </div>
+            </a>
+        </li>
+                <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+            <a href="/companyculture.html" target="_self" class="con">
+                <div class="pic"><img src="/skin/picture/24dc4cdffb320be01f79e90659c3b9f8.jpg"></div>
+                <div class="info">
+                    <div class="num">04</div>
+                    <div class="tit">企业文化</div>
+                </div>
+            </a>
+        </li>
+            </ul>
+</div>
+<div class="row-c3">
+    <div class="wp">
+        <div class="g-tit02">
+            <div class="tit">新闻资讯</div>
+            <div class="desc">NEWS CENTER <span>记录精彩生活，共赢成就成长</span></div>
+        </div>
+        <div class="slick01">
+                    <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/125.html" title="2024年度卓信创驰再次荣获英特尔钛金级合作伙伴" class="con">
+                    <div class="pic"><img src="/skin/picture/526b7137221993caa8b161ecabac7fbb.jpg" alt="2024年度卓信创驰再次荣获英特尔钛金级合作伙伴"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">2024年度卓信创驰再次荣获英特尔钛金级合作伙伴</div>
+                        <div class="desc">年度更新，卓信创驰再次荣获英特尔钛金级合作伙伴！</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/124.html" title="【公司旅游】最美人间四月天，卓信创驰2024郴州之旅" class="con">
+                    <div class="pic"><img src="/skin/picture/1f3b34c467cf2a5eaae8efead514b27a.jpg" alt="【公司旅游】最美人间四月天，卓信创驰2024郴州之旅"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">【公司旅游】最美人间四月天，卓信创驰2024郴州之旅</div>
+                        <div class="desc">都说最美人间四月天，正是出游的好时节，不如暂时放下工作，投入大自然的怀抱，我们相约湖南郴州，一起向快乐出发！</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/117.html" title="卓信创驰精彩亮相第二十一届中国国际检验医学暨输血仪器试剂博览会CACLP" class="con">
+                    <div class="pic"><img src="/skin/picture/342ca5cda9308dac089539462b7560aa.png" alt="卓信创驰精彩亮相第二十一届中国国际检验医学暨输血仪器试剂博览会CACLP"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">卓信创驰精彩亮相第二十一届中国国际检验医学暨输血仪器试剂博览会CACLP</div>
+                        <div class="desc">2024年3月16日-3月18日，卓信创驰作为医疗行业嵌入式硬件产品提供商，携多款王牌产品精彩亮相CACLP，与行业内专业人士深度交流，共创未来。</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/1071.html" title="我们是英特尔合作伙伴联盟钛金级会员合作伙伴啦！" class="con">
+                    <div class="pic"><img src="/skin/picture/0b03f8c4810d08f8f3b5a217887243f8.png" alt="我们是英特尔合作伙伴联盟钛金级会员合作伙伴啦！"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">我们是英特尔合作伙伴联盟钛金级会员合作伙伴啦！</div>
+                        <div class="desc"></div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/1061.html" title="助力机器视觉领域发展 │ 卓信创驰亮相2023机器视觉技术与应用" class="con">
+                    <div class="pic"><img src="/skin/picture/647307d930c31ea213ca9f619f4d3711.jpg" alt="助力机器视觉领域发展 │ 卓信创驰亮相2023机器视觉技术与应用"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">助力机器视觉领域发展 │ 卓信创驰亮相2023机器视觉技术与应用</div>
+                        <div class="desc">2023年5月11日，卓信创驰出席2023机器视觉技术与应用峰会，产品和技术备受现场客户青睐。</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/100.html" title="卓信创驰携手英特尔！行稳致远 融合创新—2023AMR赋能智能制造研讨会成功举行" class="con">
+                    <div class="pic"><img src="/skin/picture/2fab47ab5065dc55c7d78ca9138483f6.jpg" alt="卓信创驰携手英特尔！行稳致远 融合创新—2023AMR赋能智能制造研讨会成功举行"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">卓信创驰携手英特尔！行稳致远 融合创新—2023AMR赋能智能制造研讨会成功举行</div>
+                        <div class="desc">3月6日，由英特尔和卓信创驰联合主办的 “行稳致远 融合创新 2023AMR赋能智能制造研讨会” 在深圳前海华侨城JW万豪酒店成功举行。</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/98.html" title="【公司动态】卓信创驰全新官网上线啦" class="con">
+                    <div class="pic"><img src="/skin/picture/faef0ee0608d0eba1cd0eb711f929482.jpg" alt="【公司动态】卓信创驰全新官网上线啦"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">【公司动态】卓信创驰全新官网上线啦</div>
+                        <div class="desc">卓信创驰官网全面改版，2月27日正式上线！欢迎大家前来体验~</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/5.html" title="【公司动态】机器视觉市场蓝海掘金，不要忽视背后这个默默无闻的总指挥" class="con">
+                    <div class="pic"><img src="/skin/picture/f95369a87cd72de7dee02130ea966794.png" alt="【公司动态】机器视觉市场蓝海掘金，不要忽视背后这个默默无闻的总指挥"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">【公司动态】机器视觉市场蓝海掘金，不要忽视背后这个默默无闻的总指挥</div>
+                        <div class="desc">转载自《act视觉系统设计》</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/4.html" title="【产品应用】迎战双十一！卓信创驰助力物流行业高效应对物流高峰" class="con">
+                    <div class="pic"><img src="/skin/picture/d50e29c6fb9a431c5fe5ef93782a836b.png" alt="【产品应用】迎战双十一！卓信创驰助力物流行业高效应对物流高峰"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">【产品应用】迎战双十一！卓信创驰助力物流行业高效应对物流高峰</div>
+                        <div class="desc">卓信创驰多年来助力智慧物流领域提升仓储物流分拣、运输效率，使物流环节更加高效灵活。</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/3.html" title="【公司动态】ROBOT IN! 卓信创驰受邀参与英特尔智能机器人峰会，携手为产业智能化升级赋能" class="con">
+                    <div class="pic"><img src="/skin/picture/71c9a39cd49cb18d5261faac022d2157.png" alt="【公司动态】ROBOT IN! 卓信创驰受邀参与英特尔智能机器人峰会，携手为产业智能化升级赋能"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">【公司动态】ROBOT IN! 卓信创驰受邀参与英特尔智能机器人峰会，携手为产业智能化升级赋能</div>
+                        <div class="desc">9月16日 ，卓信创驰受邀参加英特尔智能机器人峰会。英特尔联合卓信创驰及其在机器人领域的其他合作伙伴共同发布了英特尔中国首个机器人行业白皮书，从产业发展概况、实际案例、产品和技术等多个方面探讨国内机器人领域的现状和未来发展趋势，共同推动机器人的创新生态发展。</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/2.html" title="【行业应用】“双碳”背景下工业计算机助力企业绿色制造" class="con">
+                    <div class="pic"><img src="/skin/picture/38ba6a5a605f307b878276bb65411fd8.png" alt="【行业应用】“双碳”背景下工业计算机助力企业绿色制造"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">【行业应用】“双碳”背景下工业计算机助力企业绿色制造</div>
+                        <div class="desc">卓信创驰E500工业计算机助力工业领域实现"双碳"目标。</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                        <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <a href="/87.html" title="【产品应用】基于卓信创驰V510系列的高性能视觉和运动控制器解决方案" class="con">
+                    <div class="pic"><img src="/skin/picture/1e27c7244209d623d7d042afb13897ff.jpg" alt="【产品应用】基于卓信创驰V510系列的高性能视觉和运动控制器解决方案"></div>
+                    <div class="txt">
+                        <div class="titsub">新闻动态</div>
+                        <div class="tit">【产品应用】基于卓信创驰V510系列的高性能视觉和运动控制器解决方案</div>
+                        <div class="desc">卓信创驰推出了支持Intel 第6、7、8、9代CPU + FPGA扩展的视觉和运动控制解决方案V510系列，这个方案具有性能强大、开放框架、可靠易用的优势和特点</div>
+                        <div class="more">了解更多&gt;</div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</div>
+    
+<script>
+    $(function() {
+        $('.in-ban').slick({
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            fade: true,
+            cssEase: 'linear',
+            customPaging: function(slider, i) {
+                var num1 = i + 1;
+                var num2 = slider.slideCount;
+                if (num1 < 9) {
+                    num1 = '0' + num1;
+                }
+                if (num2 < 9) {
+                    num2 = '0' + num2;
+                }
+                return num1;
+            },
+        });
+        $('.slick01').slick({
+            dots: true,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [{
+                breakpoint: 1001,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }],
+        });
+    });
+</script><div class="footer">
+    <div class="wp">
+        <div class="fd-top">
+            <ul class="ul-fdnav">
+                                            <li>
+                    <div class="tit">产品信息</div>
+                                                            <a href="/scalable1.html" class="v1">可扩展嵌入式系列</a>
+                                        <a href="/mini2.html" class="v1">超紧凑迷你型系列</a>
+                                        <a href="/universal1.html" class="v1">通用嵌入式系列</a>
+                                        <a href="/allinone1.html" class="v1">⼯业触控⼀体机</a>
+                                                            <a href="/realtimeIO1.html" class="v1">实时I/O控制</a>
+                                        <a href="/cards1.html" class="v1">扩展卡与以太⽹卡</a>
+                                                                                                            </li>
+                                <li>
+                    <div class="tit">销售与支持</div>
+                                                                               <a href="/sample1.html" class="v1">样品申请</a>
+                                        <a href="/ycsphy.html" class="v1">售后服务</a>
+                                        <a href="/problems.html" class="v1">常见问题</a>
+                                        <a href="/downloads.html" class="v1">下载专区</a>
+                                        <a href="/designandmanufacture.html" class="v1">设计与制造</a>
+                                        <a href="/customized.html" class="v1">客制化服务</a>
+                                                                                          </li>
+                                <li>
+                    <div class="tit">行业应用</div>
+                                                                                                <a href="/32.html" class="v1">智能制造</a>
+                                        <a href="/10.html" class="v1">机器视觉</a>
+                                        <a href="/92.html" class="v1">AMR</a>
+                                                                        </li>
+                                <li>
+                    <div class="tit">关于我们</div>
+                                                                                                                  <a href="/company.html" class="v1">公司简介</a>
+                                        <a href="/companyculture1.html" class="v1">企业文化</a>
+                                        <a href="/news1.html" class="v1">新闻动态</a>
+                                        <a href="/contactus1.html" class="v1">联系我们</a>
+                                        <a href="/video1.html" class="v1">视频介绍</a>
+                                                      </li>
+                                        </ul>
+            <div class="fd-tel">
+                <div class="info">
+                    <div class="fd-logo"><a href="/index.html"><img src="/skin/picture/fd-logo.png" alt=""></a></div>
+                    <ul class="ul-tel">
+                        <li>
+                            <div class="con">
+                                <div class="icn"><img src="/skin/picture/g-icn03.png" alt=""></div>
+                                <div class="txt">热线：0755-86560716</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="con">
+                                <div class="icn"><img src="/skin/picture/g-icn04.png" alt=""></div>
+                                <div class="txt">邮箱：info@futurerobottech.com</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="con">
+                                <div class="icn"><img src="/skin/picture/g-icn05.png" alt=""></div>
+                                <div class="txt">地址：广东省深圳市南山区龙珠三路45号南山睿园17栋6层</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="qr">
+                    <img src="/skin/picture/3afac894371445098f9e3f2ec09fb810.png">
+                    <div class="desc">扫一扫，关注我们</div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-copy">
+            <div class="copy"><p>Copyrigt © 深圳市卓信创驰技术有限公司 All Rights Reserved 粤ICP备18096933号-1</p></div>
+            <div class="link">
+                <!-- <a href="">网站地图</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="ul-snv">
+    <li>
+        <a href="javascript:;" class="con"><img src="/skin/picture/g-icn06.png" alt=""></a>
+        <div class="sub">
+            <div class="item">
+                <div class="icn"><img src="/skin/picture/icn42.png" alt=""></div>
+                <div class="tit"><a href="https://yzf.qq.com/xv/web/skin/chat/index.html?sign=37ef9b97d1200792214797eb1bb3e2630aa7cd46ba3f51ff51a4bc40ea01b72f3ead319deab6bfffccb80ab144769342f22e8cb6" target="_blank">在线联系</a></div>
+            </div>
+            <div class="item">
+                <div class="icn"><img src="/skin/picture/icn43.png" alt=""></div>
+                <div class="tit">0755-86560716</div>
+            </div>
+            <div class="item">
+                <div class="icn"><img src="/skin/picture/icn44.png" alt=""></div>
+                <div class="tit">info@futurerobottech.com</div>
+            </div>
+        </div>
+    </li>
+</ul>
+<script src="/skin/js/wow.min.js"></script>
+<script src="/skin/js/lib.js"></script>
+<link rel="stylesheet" href="/skin/css/slick.css">
+<script src="/skin/js/slick.min.js"></script>
+	<div style="display:none;"><a href="https://smalltool.github.io/">仿站小工具</a></div>
+</body>
+</html><?php return array (
+); ?>
